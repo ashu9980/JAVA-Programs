@@ -24,9 +24,9 @@ public class UploadFilesUsingSendKeys {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.get("https://github.com/settings/profile");
 		WebElement username= driver.findElement(By.xpath("//*[@id='login_field']"));
-		username.sendKeys("ashwinial1998@gmail.com");
+		username.sendKeys("");
 		WebElement password=driver.findElement(By.xpath("//*[@id='password']"));
-		password.sendKeys("Ashuappi880@");
+		password.sendKeys("");
 		WebElement signin=driver.findElement(By.xpath("//*[@class='btn btn-primary btn-block js-sign-in-button']"));
 		signin.click();
 		Thread.sleep(5000);
